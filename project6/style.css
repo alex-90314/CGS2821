@@ -9,7 +9,7 @@ html, body {
 
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Neuropol', 'Exo 2', sans-serif;
 	font-size: 1.1em;
 	line-height: 1.6em;
 	color: #FFFFFF;
@@ -23,6 +23,7 @@ p, li, td {
 	color: #ffffff;
 }
 h1 {
+	font-family: 'Orbitron', sans-serif;
 	font-size: 2.1em;
 	padding: 4px 0;
 	line-height: 2em;
@@ -48,7 +49,7 @@ h3 {
 
 blockquote {
 	font-size:1.2em;
-	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-family:'Ailerons', 'Neuropol', sans-serif;
 }
 
 /* link styles ---------------------------- */
@@ -82,6 +83,7 @@ ol {
 
 /* table styles -------------------------------------- */
 table {
+	font-family: 'Ailerons', 'Neuropol', sans-serif;;
 	border: solid #0077C8 1px;
 }
 td {
