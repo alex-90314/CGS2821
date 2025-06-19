@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document created by Ken Baldauf, January 26, 2011 updated August 2014*/
+/* CSS Document Updated for 2021 by Kyle Muller */
+
+html, body {
+	margin:0;
+	padding:0;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.6em;
+	color: #FFFFFF;
+	background-color: hsl(200, 55%, 65%);
+	padding: 0 40px;
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #ffffff;
+}
+h1 {
+	font-size: 2.1em;
+	padding: 4px 0;
+	line-height: 2em;
+}
+h2 {
+	font-size: 24px;
+	padding: 6px;
+	font-variant: small-caps;
+	letter-spacing: 0.3em;
+	background-color: rgb(0,150,57);
+}
+
+h3 {
+	font-size: 17px;
+	letter-spacing: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: rgb(255, 205, 0);
+	padding: 4px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+blockquote {
+	font-size:1.2em;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* link styles ---------------------------- */
+
+/* Unvisited Link */
+a:link {
+	font-weight: bold;
+	color: rgb(0, 150, 57);
+	text-decoration: none;
+}
+
+/* Unclicked Link */
+a:visited {
+	font-weight: bold;
+	color: hsl(280,40%,60%);
+	text-decoration: none;
+}
+
+/* Mouse over link */
+a:hover {
+	color: hsl(210,60%,50%);
+}
+
+/* list styles ----------------------------- */
+ul li {
+	margin-left: 12px;
+}
+ol {
+	margin-left: 14px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	border: solid #0077C8 1px;
+}
+td {
+	padding: 6px;
+	border: solid #0077C8 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #0077C8;
+	text-align: center;
+	padding: 6px;
+	border: solid #0077C8 1px;
+}
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid rgb(255, 205, 0) 1px;
+}
+
+img {
+	border: solid rgb(255, 103, 31) 1px;
+
+}
+iframe {
+	border: solid rgb(255, 205, 0) 1px;
+	padding: 8px;
+	margin: 8px;
+}
+
+
