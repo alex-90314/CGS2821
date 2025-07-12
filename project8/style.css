@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* CSS Document created by Ken Baldauf, January 26, 2011 updated August 2014*/
+/* CSS Document Updated for 2021 by Kyle Muller */
+
+html, body {
+	margin:0;
+	padding:0;
+}
+
+
+body {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.6em;
+	color: #000000;
+	background-color: hsl(200, 55%, 65%);
+}
+
+body {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.6em;
+	color: #000000; 
+	background-color: hsl(200, 55%, 65%);
+	/* Padding removed from body as container will handle content centering */
+}
+
+/* Container ID style */
+#container {
+    width: 900px; 
+    background-color: #FFFFFF; 
+    margin: 0 auto; 
+    border: 1px solid #000000; 
+    overflow: hidden; /* Hides content that overflows the container's width */
+}
+
+/* basic text styles ----------------------------  */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #000000;
+	margin: 10px 40px;
+}
+h1 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 2.1em;
+	padding: 4px 0;
+	line-height: 2em;
+}
+
+h2 {
+	font-family: 'Neuropol', 'Exo 2', sans-serif;
+	font-size: 24px;
+	padding: 6px;
+	font-variant: small-caps;
+	letter-spacing: 0.3em;
+}
+
+h3 {
+	font-size: 17px;
+	letter-spacing: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: rgb(255, 205, 0);
+	padding: 4px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+blockquote {
+	font-size:1.2em;
+	font-family:'Ailerons', 'Neuropol', sans-serif;
+}
+
+
+/* Unvisited Link */
+a:link {
+	font-weight: bold;
+	color: rgb(0, 150, 57);
+	text-decoration: none;
+}
+
+/* Unclicked Link */
+a:visited {
+	font-weight: bold;
+	color: hsl(280,40%,60%);
+	text-decoration: none;
+}
+
+/* Mouse over link */
+a:hover {
+	color: hsl(210,60%,50%);
+}
+
+ul li {
+	margin-left: 12px;
+}
+ol {
+	margin-left: 14px;
+}
+
+/* table styles -------------------------------------- */
+table {
+	font-family: 'Ailerons', 'Neuropol', sans-serif;
+	border: solid #0077C8 1px;
+    width: 100%;
+    table-layout: fixed; /* Prevents content from expanding the table */
+    border-collapse: collapse;
+}
+
+td {
+	font-family: sans-serif;
+	padding: 8px;
+	border: solid #0077C8 1px;
+    word-wrap: break-word; /* Wraps long text */
+}
+
+th {
+	font-family: 'Ailerons', 'Neuropol', sans-serif;
+	font-weight: bold;
+	background-color: #0077C8;
+	text-align: center;
+	padding: 8px;
+	border: solid #0077C8 1px;
+}
+
+/* Set specific column widths to prevent overflow */
+table th:nth-child(1) {
+    width: 20%;
+}
+table th:nth-child(2) {
+    width: 25%;
+}
+table th:nth-child(3) {
+    width: 55%;
+}
+
+
+/* border styles ------------------------------------ */
+hr {
+	border: solid rgb(255, 205, 0) 1px;
+}
+
+img {
+	border: solid rgb(255, 103, 31) 1px;
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+img.no-border {
+    border: none;
+}
+
+iframe {
+	border: solid rgb(255, 205, 0) 1px;
+	padding: 8px;
+	margin: 8px;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 10px; 
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgb(233, 187, 6);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: hsl(210,60%,50%);
+}
+
+nav .active a {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+nav .active a:hover {
+    background-color: #ffffff;
+    cursor: default;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #efefef; 
+    text-align: center;
+    padding: 20px 0;
+    border-top: solid rgb(233, 186, 6) 1px; 
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.7em;
+    font-style: italic;
+    margin: 0 40px;
+}
+
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+}
+
+.main {
+    flex: 3;
+    padding-right: 20px; /* Add space between main content and sidebar */
+}
+
+#sidebar {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
