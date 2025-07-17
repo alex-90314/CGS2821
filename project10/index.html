@@ -7,15 +7,14 @@
     <meta name="keywords" content="Robotics, STEM, VEX, Single-Page">
     <title>Shaping the Engineers of Tomorrow</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Fixed Navigation Bar -->
     <nav id="main-nav">
         <ul>
             <li><a href="#splash">Home</a></li>
@@ -26,7 +25,6 @@
 
     <div id="container">
 
-        <!-- Splash/Header Section -->
         <header id="splash">
             <div class="title-section">
                 <h1>VEX Robotics Competitions</h1>
@@ -34,10 +32,8 @@
             </div>
         </header>
 
-        <!-- Main Content Wrapper -->
         <main>
 
-            <!-- Home Section (from original index.html) -->
             <section id="home" class="content-section">
                 <h2>History & Impact</h2>
                 <div class="grid-container">
@@ -54,7 +50,6 @@
                 </div>
             </section>
 
-            <!-- Past Competitions Section (from original graphics.html) -->
             <section id="past-competitions" class="content-section">
                 <h2>Most Influential VEX Competitions</h2>
                  <div class="grid-container">
@@ -95,13 +90,12 @@
                 </div>
             </section>
 
-            <!-- Current Game Section (from original current_game.html) -->
             <section id="current-game" class="content-section">
                 <h2>This Year's Game: Push Back</h2>
                 <div class="grid-container">
                     <div class="main-content">
                         <p>In the 2025–2026 VEX V5 Robotics Competition game, "Push Back," alliances of two teams each compete on a 12’ x 12’ field. The match consists of a 15-second Autonomous Period followed by a 1 minute and 45-second Driver Controlled Period. Teams aim to outscore opponents by placing Blocks into Goals and controlling zones.</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ocmONiVun9M?si=9adwSTUKoKXWhMMi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>A video reveal of the game typically demonstrates the rules, scoring, and field elements to help teams strategize for the new season. This visual guide is crucial for understanding the engineering challenges ahead.</p>
                     </div>
                     <aside class="sidebar">
                         <h3>Game-Changing Strategies</h3>
@@ -120,11 +114,21 @@
 
         </main>
 
-        <!-- Footer Section -->
         <footer>
-            <p>&copy; 2025 Alexander Sando | <a href="https://www.fsu.edu/" target="_blank">Florida State University</a></p>
+            <p>© 2025 Alexander Sando | <a href="https://www.fsu.edu/" target="_blank">Florida State University</a></p>
         </footer>
 
-    </div><!-- /end #container -->
+    </div><script src="jquery.js"></script>
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+     jQuery(document).ready(function () {
+          jQuery('.button').click(function() {
+               targetName = jQuery(this).attr('href');
+               targetLocation = jQuery(targetName).offset().top;
+               jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+               return false;
+               });
+          });
+</script>
 </body>
 </html>
