@@ -1,0 +1,246 @@
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+    scroll-padding-top: 80px; /* Offset for the height of the fixed nav */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #212529; /* Dark gray for readability */
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+#container {
+    max-width: 1200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* Professional, bold header font */
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.8em;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    color: #004d40; /* Dark Teal */
+    position: relative;
+}
+
+/* Underline effect for H2 */
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #00bfa5; /* Bright Teal Accent */
+}
+
+
+h3 {
+    font-size: 1.6em;
+    color: #004d40; /* Dark Teal */
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+a {
+    color: #00796b; /* Teal for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00bfa5; /* Brighter teal on hover */
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 5px solid #00bfa5;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    color: #343a40;
+}
+
+/* --- Navigation Bar --- */
+#main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212529; /* Dark Gray */
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 15px 0;
+}
+
+#main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#main-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#main-nav a {
+    color: #ffffff;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 20px; /* Pill-shaped buttons */
+    transition: all 0.3s ease;
+}
+
+#main-nav a:hover {
+    background-color: #00bfa5;
+    color: #ffffff;
+}
+
+/* --- Splash / Header Section --- */
+#splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: #ffffff;
+}
+
+#splash h1 {
+    font-size: 5em;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+#splash .byline {
+    font-size: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin-top: 15px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* --- Content Sections --- */
+.content-section {
+    padding: 80px 50px; /* More vertical padding */
+    border-bottom: 1px solid #e9ecef; /* Lighter border */
+}
+
+/* Style sections independently for visual separation */
+#home { background-color: #ffffff; }
+#past-competitions { background-color: #f8f9fa; }
+#current-game { background-color: #ffffff; }
+
+
+/* --- Grid & Content Layout --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column */
+    gap: 50px;
+    margin-top: 20px;
+}
+
+/* Activate 2-column grid on larger screens */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.sidebar {
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6; /* Subtle border */
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #004d40;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.references {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+.references ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.references li {
+    margin-bottom: 10px;
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: #212529; /* Dark Gray */
+    color: #adb5bd; /* Lighter text color */
+    text-align: center;
+    padding: 40px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #00bfa5;
+}
