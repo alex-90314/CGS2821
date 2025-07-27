@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alexander Sando">
-    <meta name="keywords" content="Robotics, STEM, VEX, Single-Page">
+    <meta name="keywords" content="Robotics, STEM, VEX, Single-Page, Responsive">
     <title>Shaping the Engineers of Tomorrow</title>
+    <!-- Link to the main stylesheet -->
     <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Link to the responsive stylesheet -->
+    <link href="responsive.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +42,7 @@
                     <div class="main-content">
                         <p>Founded by Innovation First International, VEX Robotics offers accessible, scalable robotics solutions for education. The program spans elementary to university levels, providing platforms tailored to various age groups and skill levels. In 2018, it was recognized by Guinness World Records as the world's largest robotics competition.</p>
                         <p>VEX Robotics competitions challenge students to design, build, and program robots for specific tasks within game-based engineering challenges. Divided into leagues like VEX IQ and VEX V5, these competitions promote critical thinking and innovation. Tournaments occur year-round, culminating in the VEX Robotics World Championship.</p>
-                        <img src="images/robot_24-25.png" alt="Robot used during the 24-25 game" class="content-image">
+                        <img src="images/robot_24-25.png" alt="Robot used during the 24-25 game" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Robot+Image';">
                         <blockquote>"The VEX Robotics Competition... continues to inspire, motivate and prepare kids for a future in advanced STEM education and related professions." — Jason Morrella, President of the REC Foundation</blockquote>
                     </div>
                     <aside class="sidebar">
@@ -84,7 +87,7 @@
                     <aside class="sidebar">
                         <h3>Past Champions</h3>
                         <p>The VEX Robotics World Championship has seen many champions. A notable winner is the team from Shanghai Jiao Tong University, which has won multiple championships.</p>
-                        <img src="images/game_08_18.png" alt="Competition layout from 2008 and 2018" class="content-image">
+                        <img src="images/game_08_18.png" alt="Competition layout from 2008 and 2018" class="content-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Game+Image';">
                     </aside>
                 </div>
             </section>
@@ -117,21 +120,18 @@
             <p>© 2025 Alexander Sando | <a href="https://www.fsu.edu/" target="_blank">Florida State University</a></p>
         </footer>
 
-        </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-        <script type="text/javascript">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        // Smooth scrolling for navigation links
         jQuery(document).ready(function () {
-            jQuery('.button').click(function() {
-                // The 'href' attribute contains the ID of the target section (e.g., "#splash")
+            jQuery('.button').click(function(e) {
+                e.preventDefault(); // Prevent the default anchor behavior
                 var targetName = jQuery(this).attr('href');
-                // Use the ID to find the target element and get its position from the top of the page
                 var targetLocation = jQuery(targetName).offset().top;
-                // Animate the scrolling motion
                 jQuery('html, body').animate({scrollTop: targetLocation}, 'slow');
-                // Prevent the default link behavior
-                return false;
-                });
             });
-        </script>
-    </body>
+        });
+    </script>
+</body>
 </html>

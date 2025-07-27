@@ -1,0 +1,103 @@
+/* --- Breakpoint 1: Large screens / Desktops (below 1200px) --- */
+@media screen and (max-width: 1200px) {
+    #container {
+        width: 95%;
+    }
+    #splash h1 {
+        font-size: 4.5em;
+    }
+    #splash .byline {
+        font-size: 1.5em;
+    }
+}
+
+/* --- Breakpoint 2: Medium screens / Tablets (below 992px) --- */
+@media screen and (max-width: 992px) {
+    h2 {
+        font-size: 2.4em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    .content-section {
+        padding: 60px 30px;
+    }
+}
+
+/* --- Breakpoint 3: Small screens / Tablets (below 767px) --- */
+@media screen and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        padding: 20px;
+    }
+    #splash {
+        height: 80vh;
+    }
+    #splash h1 {
+        font-size: 3em;
+    }
+    #splash .byline {
+        font-size: 1.2em;
+    }
+    #main-nav li {
+        margin: 0 8px;
+    }
+    #main-nav a {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+    table, th, td {
+        font-size: 0.85em;
+        padding: 10px;
+    }
+}
+
+/* --- Breakpoint 4: Extra small screens / Mobile phones (below 480px) --- */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+    #main-nav {
+        padding: 10px 0;
+    }
+    #main-nav ul {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+    }
+    #main-nav li {
+        display: block;
+        margin: 5px 0;
+        width: 100%;
+    }
+    html {
+        scroll-padding-top: 190px; 
+    }
+    #splash {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+    #splash h1 {
+        font-size: 2.2em;
+    }
+    #splash .byline {
+        font-size: 1.1em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    .content-section {
+        padding: 40px 20px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

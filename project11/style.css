@@ -1,3 +1,4 @@
+/* --- Base and General Styles --- */
 html {
     scroll-padding-top: 80px;
 }
@@ -29,7 +30,7 @@ h2 {
     text-align: center;
     padding-bottom: 15px;
     margin-bottom: 40px;
-    color: #004d40; /* Dark Teal */
+    color: #004d40; 
     position: relative;
 }
 
@@ -42,13 +43,13 @@ h2::after {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #00bfa5; /* Bright Teal Accent */
+    background-color: #00bfa5; 
 }
 
 
 h3 {
     font-size: 1.6em;
-    color: #004d40; /* Dark Teal */
+    color: #004d40; 
     margin-top: 0;
 }
 
@@ -57,14 +58,14 @@ p {
 }
 
 a {
-    color: #00796b; /* Teal for links */
+    color: #00796b; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #00bfa5; /* Brighter teal on hover */
+    color: #00bfa5; 
 }
 
 blockquote {
@@ -83,7 +84,7 @@ blockquote {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #212529; /* Dark Gray */
+    background-color: #212529;
     z-index: 1000;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -107,7 +108,7 @@ blockquote {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     padding: 8px 16px;
-    border-radius: 20px; /* Pill-shaped buttons */
+    border-radius: 20px; 
     transition: all 0.3s ease;
 }
 
@@ -126,7 +127,7 @@ blockquote {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('images/banner.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax effect */
+    background-attachment: fixed; 
     color: #ffffff;
 }
 
@@ -146,8 +147,8 @@ blockquote {
 
 /* --- Content Sections --- */
 .content-section {
-    padding: 80px 50px; /* More vertical padding */
-    border-bottom: 1px solid #e9ecef; /* Lighter border */
+    padding: 80px 50px; 
+    border-bottom: 1px solid #e9ecef; 
 }
 
 /* Style sections independently for visual separation */
@@ -159,7 +160,7 @@ blockquote {
 /* --- Grid & Content Layout --- */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Default to single column */
+    grid-template-columns: 1fr; 
     gap: 50px;
     margin-top: 20px;
 }
@@ -175,7 +176,7 @@ blockquote {
     background-color: transparent;
     padding: 30px;
     border-radius: 8px;
-    border: 1px solid #dee2e6; /* Subtle border */
+    border: 1px solid #dee2e6; 
 }
 
 .content-image {
