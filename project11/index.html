@@ -121,17 +121,16 @@
         </footer>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript">
-        // Smooth scrolling for navigation links
+    <script src="jquery.js"></script>
+    <script>
         jQuery(document).ready(function () {
-            jQuery('.button').click(function(e) {
-                e.preventDefault(); // Prevent the default anchor behavior
-                var targetName = jQuery(this).attr('href');
-                var targetLocation = jQuery(targetName).offset().top;
-                jQuery('html, body').animate({scrollTop: targetLocation}, 'slow');
+            jQuery('.button').click(function() {
+                targetName = jQuery(this).attr('href');
+                targetLocation = jQuery(targetName).offset().top;
+                jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+                return false;
+                });
             });
-        });
     </script>
 </body>
 </html>
